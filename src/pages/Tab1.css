@@ -1,0 +1,67 @@
+.custom-header {
+    background-color: cyan;
+}
+
+.custom-background {
+    --background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+}
+
+.custom-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.custom-input {
+    border: 2px solid #fff; 
+    border-radius: 20px;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.85); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 18px;
+    color: #5a67d8; 
+}
+
+.custom-button {
+    border-radius: 20px;
+    background: #5a67d8; 
+    color: #fff; 
+    box-shadow: 0 6px 20px rgba(90, 103, 216, 0.5);
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #434190; 
+}
+
+.custom-card {
+    border-radius: 16px;
+    background-color: #2196f3; 
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px); 
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out; 
+}
+
+h2{
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
