@@ -1,5 +1,5 @@
 .custom-header {
-    background-color: cyan;
+    background-color: rgb(93, 169, 169);
 }
 
 .custom-background {
@@ -9,7 +9,7 @@
 .custom-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    color: #fff;
+    color: blue;
     text-align: center;
 }
 

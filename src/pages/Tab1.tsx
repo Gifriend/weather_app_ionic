@@ -35,7 +35,6 @@ const Tab1: React.FC = () => {
     getLocationWeather(); 
   }, []);
 
-
   const getLocationWeather = async () => {
     setLoading(true);
     const location = await LocationService.getCurrentLocation();
@@ -57,7 +56,7 @@ const Tab1: React.FC = () => {
 
   return (
     <IonPage>
-      <IonHeader style={{backgroundColor: 'cyan'}}>
+      <IonHeader className="custom-header">
         <IonToolbar>
           <IonTitle className="custom-title">Weather App</IonTitle>
         </IonToolbar>
@@ -110,11 +109,11 @@ const Tab1: React.FC = () => {
           )}
 
           {locationWeather && (
-            <IonRow className="ion-justify-content-center ion-margin-top fade-in" >
+            <IonRow className="ion-justify-content-center ion-margin-top fade-in">
               <IonCol size="12" sizeMd="8" sizeLg="6">
                 <IonCard className="custom-card">
                   <IonCardHeader>
-                    <h2>Your Location Weather</h2>
+                    <h2>{locationWeather.name}'s Weather</h2>
                   </IonCardHeader>
                   <IonCardContent>
                     <p>
